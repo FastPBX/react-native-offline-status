@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {
   NetInfo,
-  View,
   StatusBar,
   Animated,
   Easing,
-  AppState
+  AppState,
+  SafeAreaView,
+  Modal
 } from "react-native";
 import styles from "./index.styles";
 
@@ -72,13 +73,19 @@ export default class OfflineBar extends Component {
       transform: [{ translateX: interpolated }]
     };
     const { offlineText = "You are not connected to Internet" } = this.props;
-    return !this.state.isConnected ? (
-      <View style={[styles.container]}>
-        <StatusBar backgroundColor="#424242" />
-        <Animated.Text style={[styles.offlineText, animationStyle]}>
-          {offlineText}
-        </Animated.Text>
-      </View>
-    ) : null;
+    return (
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={!this.state.isConnected}
+        onRequestClose={() => console.log("closed")}>
+        <SafeAreaView style={[styles.container]}>
+          <StatusBar backgroundColor="#424242" />
+          <Animated.Text style={[styles.offlineText, animationStyle]}>
+            {offlineText}
+          </Animated.Text>
+        </SafeAreaView>
+      </Modal>
+    )
   }
 }
