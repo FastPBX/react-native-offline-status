@@ -1,10 +1,13 @@
 export default {
   container: {
-    backgroundColor: '#424242'
+    backgroundColor: '#b2bec3',
+    flex: 1,
   },
   offlineText: {
     color: 'white',
     padding: 10,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: '600',
+    fontSize: 20
   }
 };

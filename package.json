@@ -1,7 +1,7 @@
 {
   "name": "react-native-offline-status",
-  "version": "1.0.0",
-  "description": "A network status bar which shows up on top when the app is offline.",
+  "version": "1.1.0",
+  "description": "A network status screen which shows up when the app is offline.",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -16,12 +16,12 @@
     "bar",
     "component"
   ],
-  "author": "Rahul Gaba",
+  "author": "Rudy Pedraza",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rgabs/react-native-offline-status/issues"
+    "url": "https://github.com/FastPBX/react-native-offline-status/issues"
   },
-  "homepage": "https://github.com/rgabs/react-native-offline-status#readme",
+  "homepage": "https://github.com/FastPBX/react-native-offline-status#readme",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
