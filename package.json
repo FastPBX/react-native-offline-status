@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rgabs/react-native-offline-status.git"
+    "url": "git+https://github.com/FastPBX/react-native-offline-status.git"
   },
   "keywords": [
     "react",
